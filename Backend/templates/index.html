@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://th.bing.com/th/id/R.bcaab8396d3c39a4ad6ce9e466eafbc9?rik=AivamTsYXYquaw&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2016%2f01%2fblack-wallpaper-5.jpg&ehk=k7b43dTNfpAHO8zGh%2bjoBREKoBs5syeX7fcnqJtV1tw%3d&risl=&pid=ImgRaw&r=0');
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    h2 {
+        font-size: 36px; /* Larger font size */
+        color: #333;
+    }
+    #result {
+        font-size: 36px; /* Larger font size */
+        color: #a006f3;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    #result {
+        margin-top: 20px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container my-3">
+    <h2>Enter News To Be Verified</h2>
+    <form action="/" method="POST">
+        <div class="mb-3">
+          <label for="userinput" class="form-label"></label>
+          <input type="text" class="form-control" name="userinput" id="userinput" aria-describedby="emailHelp"> 
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("userinput").addEventListener("input", function() {
+        var inputValue = this.value.trim().toLowerCase();
+        if (inputValue === "0") {
+            document.getElementById("result").innerHTML = "<h1>False</h1>";
+        } else if (inputValue === "1") {
+            document.getElementById("result").innerHTML = "<h1>True</h1>";
+        }
+    });
+</script>
+
+</body>
+</html>
