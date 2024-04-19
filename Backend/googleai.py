@@ -1,7 +1,7 @@
 
 # import google.generativeai as genai
 
-#  os.environ['YOUR_API_KEY'] = "AIzaSyCCgV_4zM-zQQfui-vs8QNZ8LKyVVD5k4Y"
+#  os.environ['YOUR_API_KEY'] = " "
 
 # # Configure Germi AI
 # genai.configure(api_key=os.environ['YOUR_API_KEY'])
