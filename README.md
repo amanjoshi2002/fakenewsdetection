@@ -33,9 +33,4 @@ Use the manual entry feature to input data.
 Report issues as necessary.
 
 
-Contributors
-•	Aman Joshi
-•	Shivaraj Darki
-•	Atharv Salgaonkar
-•	Akash Chalwadi
 
