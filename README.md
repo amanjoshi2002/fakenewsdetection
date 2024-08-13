@@ -1,4 +1,4 @@
-# Team_PCCE
+
 Overview: 
 This Flutter application showcases a front page featuring a draggable arrow icon leading to a news page. Users can initiate a draggable bubble overlay and stop it as needed. The app retrieves clipboard data, interacts with a backend API for predictions, and offers manual data entry and issue reporting functionalities. It includes elevated buttons and text fields for user interaction and provides seamless navigation between pages. The app utilizes various Flutter packages to enhance functionality.
 
